@@ -1,6 +1,8 @@
 // Footer.js
 import React from 'react';
 import './footer.css';
+import 'bootstrap/dist/css/bootstrap.css';
+
 
 function Footer() {
   return (
@@ -60,10 +62,10 @@ function Footer() {
               {/* Column5 */}
               <h4>Follow Us</h4>
               <ul className="social-network social-circle">
-                <li><a href="https://www.facebook.com/olxpakistan" target="_blank" rel="noopener noreferrer"><img src="../images/Facebook_f_logo_(2021).svg.png" alt="Facebook" width="20px" height="20px" /></a></li>
-                <li><a href="https://www.instagram.com/olx.pakistan/" target="_blank" rel="noopener noreferrer"><img src="../images/c8952d6e421a83d298a219edee783167.jpg" alt="Instagram" width="20px" height="20px" /></a></li>
-                <li><a href="https://www.youtube.com/channel/UCARDDjJnW7IRBpo_AP7WTHQ" target="_blank" rel="noopener noreferrer"><img src="../images/6a4204f04496559aa27101d25983d0f0.png" alt="YouTube" width="20px" height="20px" /></a></li>
-                <li><a href="https://twitter.com/OLX_Pakistan" target="_blank" rel="noopener noreferrer"><img src="../images/Popular-Logo-Twitter-icon-transparent-PNG.png" alt="Twitter" width="20px" height="20px" /></a></li>
+                <li><a href="https://www.facebook.com/olxpakistan" target="_blank" rel="noopener noreferrer"><img src="../images/facebook.png" alt="Facebook" width="20px" height="20px" /></a></li>
+                <li><a href="https://www.instagram.com/olx.pakistan/" target="_blank" rel="noopener noreferrer"><img src="../images/instragram.jpg" alt="Instagram" width="20px" height="20px" /></a></li>
+                <li><a href="https://www.youtube.com/channel/UCARDDjJnW7IRBpo_AP7WTHQ" target="_blank" rel="noopener noreferrer"><img src="../images/youtube.png" alt="YouTube" width="20px" height="20px" /></a></li>
+                <li><a href="https://twitter.com/OLX_Pakistan" target="_blank" rel="noopener noreferrer"><img src="../images/twitter.png" alt="Twitter" width="20px" height="20px" /></a></li>
               </ul>
             </div>
           </div>

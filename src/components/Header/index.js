@@ -1,7 +1,7 @@
 // Header.js
 import React from 'react';
 import './Header.css';
-
+ 
 function Header() {
     return (
         <>
@@ -9,7 +9,7 @@ function Header() {
                 <nav className="navbar navbar-expand-lg">
                     <div className="container-fluid">
                         <a className="navbar-brand" href="/">
-                            <img src="../images/download.png" alt="" width="50px" height="30px" />
+                            <img src="../images/olx.png" alt="" width="50px" height="30px" />
                         </a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -20,13 +20,13 @@ function Header() {
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="/">
-                                        <img src="../images/Car_icon_alone.png" alt="" width="20px" height="20px" />
+                                        <img src="../images/car.png" alt="" width="20px" height="20px" />
                                         MOTORS
                                     </a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/">
-                                        <img src="../images/download (1).png" alt="" width="20" height="20px" />
+                                        <img src="../images/home.png" alt="" width="20" height="20px" />
                                         PROPERTY
                                     </a>
                                 </li>
@@ -43,6 +43,12 @@ function Header() {
                     </div>
                 </nav>
                 <br />
+                <div>
+                    <img className='mainImg' src='https://images.olx.com.pk/thumbnails/423979386-800x600.webp'/>
+                </div>
+
+
+                <br/>
                 <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
                     <div className="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -51,13 +57,13 @@ function Header() {
                     </div>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img src="../images/Screenshot 2022-07-24 180715.png" className="d-block w-100" alt="..." />
+                            <img src="https://images.olx.com.pk/thumbnails/423979386-800x600.webp" className="d-block w-100" alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src="../images/Screenshot 2022-07-24 180715.png" className="d-block w-100" alt="..." />
+                            <img src="https://images.olx.com.pk/thumbnails/423979386-800x600.webp" className="d-block w-100" alt="..." />
                         </div>
                         <div className="carousel-item">
-                            <img src="../images/Screenshot 2022-07-24 180715.png" className="d-block w-100" alt="..." />
+                            <img src="https://images.olx.com.pk/thumbnails/423979386-800x600.webp" className="d-block w-100" alt="..." />
                         </div>
                     </div>
                     <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

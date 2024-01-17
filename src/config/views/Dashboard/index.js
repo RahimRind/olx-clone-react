@@ -1,6 +1,7 @@
 // Dashboard.js
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.css';
 
 function Dashboard() {
     const Navigate = useNavigate();
@@ -21,15 +22,15 @@ function Dashboard() {
     }
 
     return (
-        <div className="container">
-            <div className="row row-cols-1 row-cols-md-3 g-4">
+        <div className="container ">
+          <div className="row row-cols-1 row-cols-md-3 g-4">
             {products.map(({ id, thumbnail, name, title, price }) => (
-  <div key={id} className="col col-md-3 col-sm-6">
-    <div onClick={() => Navigate(`Detail/${id}`)} className="card h-100">
-      <img src={thumbnail} className="card-img-top" alt={name} height="300px" width="200px" />
-      <div className="card-body">
-        <p className="card-text">{title}</p>
-        <h5 className="card-title">Rs {price}</h5>
+               <div key={id} className="col col-md-3 col-sm-6">
+              <div onClick={() => Navigate(`Detail/${id}`)} className="card h-100">
+                  <img src={thumbnail} className="card-img-top" alt={name} height="300px" width="200px" />
+                 <div className="card-body">
+               <p className="card-text">{title}</p>
+           <h5 className="card-title">Rs {price}</h5>
       </div>
     </div>
   </div>

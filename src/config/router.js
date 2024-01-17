@@ -6,7 +6,7 @@ import CardDetail from "./views/CardDetails";
     const router = createBrowserRouter([
         {
             path: "/",
-            element: <Dashboard />
+            element: < Dashboard />
         },
         {
             path: "/Detail/:addId",
