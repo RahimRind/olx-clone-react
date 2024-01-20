@@ -1,16 +1,28 @@
 // Header.js
 import React from 'react';
+import { useNavigate } from 'react-router-dom'
 import './Header.css';
- 
+import 'bootstrap/dist/css/bootstrap.css';
+// import Singnup from '../Signup/Signup';
+
 function Header() {
+    const navigate = useNavigate();
+
+
+    
+
+
+
+
     return (
         <>
             <div className="ab container">
                 <nav className="navbar navbar-expand-lg">
                     <div className="container-fluid">
-                        <a className="navbar-brand" href="/">
-                            <img src="../images/olx.png" alt="" width="50px" height="30px" />
+                        <a className="navbar-brand m-3" href="/">
+                            <img src="../images/olx.png" alt=""  width="30px" height="20px" />
                         </a>
+                        
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
@@ -18,14 +30,14 @@ function Header() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item">
+                                <li className="nav-item m-7">
                                     <a className="nav-link active" aria-current="page" href="/">
                                         <img src="../images/car.png" alt="" width="20px" height="20px" />
                                         MOTORS
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">
+                                    <a className="nav-link m-7" href="/">
                                         <img src="../images/home.png" alt="" width="20" height="20px" />
                                         PROPERTY
                                     </a>
@@ -33,11 +45,13 @@ function Header() {
                             </ul>
                             <form className="d-flex">
                                 <div className="d-flex">
-                                    <input className="form-control m-1" type="search" placeholder="Pakistan" aria-label="Search" />
+                                    <input className="form-control m-1 " type="search" placeholder="Pakistan" aria-label="Search" />
                                     <input className="form-control m-1" type="search" placeholder="Find Cars, Mobile Phones and more..." aria-label="Search" />
                                 </div>
-                                <button type="button" className="btn btn-link text-dark m-1">Login</button>
+                                <div >
+                                <button onClick={()=>navigate("../Signup")} type="button" className="btn btn-link text-dark m-1">Login</button>
                                 <button className="button1 btn" type="submit">+SELL</button>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -49,32 +63,7 @@ function Header() {
 
 
                 <br/>
-                <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="true">
-                    <div className="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div className="carousel-inner">
-                        <div className="carousel-item active">
-                            <img src="https://images.olx.com.pk/thumbnails/423979386-800x600.webp" className="d-block w-100" alt="..." />
-                        </div>
-                        <div className="carousel-item">
-                            <img src="https://images.olx.com.pk/thumbnails/423979386-800x600.webp" className="d-block w-100" alt="..." />
-                        </div>
-                        <div className="carousel-item">
-                            <img src="https://images.olx.com.pk/thumbnails/423979386-800x600.webp" className="d-block w-100" alt="..." />
-                        </div>
-                    </div>
-                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Previous</span>
-                    </button>
-                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span className="visually-hidden">Next</span>
-                    </button>
-                </div>
+                
             </div>
             <br />
             
